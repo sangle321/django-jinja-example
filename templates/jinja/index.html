@@ -1,0 +1,20 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Jinja</title>
+  
+    <link rel="stylesheet" type="text/css" href='{{ static("css/style.css") }}'>
+</head>
+<body>
+    <h1 class="test-css">Hello, {{ name }}!</h1>
+
+    {% set greeting = "Hello" %}
+    {% set name = "John Doe" %}
+
+    <h1>{{ greeting }}, {{ name }}!</h1>
+    <p>Today is {{ day }}</p>
+
+</body>
+</html>
